@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url("https://cdn.jsdelivr.net/gh/diabloxenon/FuriousCoder@1.1.3/styleLight.css");
+
+
+
+body{
+    background-color: #c5c5c7;
+    height: 100%;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a{
+    color: #b867c9;
+    text-decoration: none;
+    transition: font-size 0.5s;
+}
+a:hover{
+    color: #eb84fc;
+    font-size: 1.2rem;
+    transition: font-size 0.5s;
+}
+
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+.profile{
+    font-family: 'Lobster', cursive;
+    font-size: 2.3rem;
+    color:lightgoldenrodyellow;
+}
+
+.navbar-color{
+    font-family: 'Lobster', cursive;
+    background-color: #393e46;
+}
+
+
+/* label icon */
+
+.icon {
+    font-family: 'Furious Coder';
+    font-size: 3.6rem;
+    transition: font-size 0.5s;
+}
+
+.icon-big,.icon-big:link,.icon-big:visited{
+  font-family: 'Furious Coder';
+  font-size: 5rem;
+  text-decoration: none;
+  color: #f04f7c;
+  transition: font-size 0.5s;
+}
+
+.icon-big:hover{
+    color: #f5376c;
+    font-size: 5.6rem;
+    transition: font-size 0.5s;
+}
+.icon-big:active{
+    color: blanchedalmond;
+    font-size: 7.8rem;
+}
+
+/* positons */
+
+.text-center{
+    -webkit-box-shadow: 0 3px 20px rgba(158, 137, 137, 0.377);
+    -moz-box-shadow: 0 3px 20px rgba(158, 137, 137, 0.377);
+    box-shadow: 0 3px 20px rgba(158, 137, 137, 0.377);
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.text-center{
+    background-color: rgba(18, 18, 18, 0.842);
+    width: 315px;
+    height: 315px;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: fixed;
+    border-radius: 50px 15px;
+    transition: width 0.5s,height 0.5s;
+}
+
+.text-center:hover{
+    width:350px;
+    height: 350px;
+    /* transition: width 2s; */
+    transition: width 0.5s,height 0.5s;
+}
+.center{
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+}
+
+.center-right {
+    right: 15%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+}
+
+.center-left {
+    right: 85%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+}
+.center-top {
+    right: 50%;
+    bottom: 85%;
+    transform: translate(50%,50%);
+    position: absolute;
+}
+
+.center-bottom {
+    right: 50%;
+    bottom: 15%;
+    transform: translate(50%,50%);
+    position: absolute;
+}

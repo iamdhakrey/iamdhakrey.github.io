@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url("https://cdn.jsdelivr.net/gh/diabloxenon/FuriousCoder@1.1.3/styleLight.css");
+
+
+
+body {
+    background-color: #c5c5c7;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    color: #b867c9;
+    text-decoration: none;
+    transition: font-size 0.5s;
+}
+
+a:hover {
+    color: #eb84fc;
+    font-size: 1.2rem;
+    transition: font-size 0.5s;
+}
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+.profile {
+    font-family: 'Lobster', cursive;
+    font-size: 2.3rem;
+    color: lightgoldenrodyellow;
+}
+
+.nav-bar {
+    overflow: hidden;
+    font-family: 'Lobster', cursive;
+    background-color: #393e46;
+    height: 60px;
+}
+
+.nav-bar-link {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.icon {
+    font-family: 'Furious Coder';
+    font-size: 5.6rem;
+    transition: font-size 0.5s;
+}
+
+.icon .label-text {
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    font-size: 16px;
+    visibility: hidden;
+    opacity: 0;
+    -o-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    -webkit-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    -moz-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+}
+
+.icon:hover .label-text {
+    bottom: 125px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon-big:link,
+.icon-big:visited,
+.icon-big{
+    font-family: 'Furious Coder';
+    font-size: 7.5rem;
+    text-decoration: none;
+    color: #f04f7c;
+    transition: font-size 0.5s;
+} 
+ 
+.icon-big:hover {
+    color: #f5376c;
+    font-size: 8rem;
+    transition: font-size 0.5s;
+
+
+}
+.icon-big:active {
+    color: rgb(166, 134, 197);
+    font-size: 7.8rem;
+}
+/* pop-up text arrow */
+.icon-big .label-big-text {
+    position: absolute;
+    bottom: 50px;
+    left: -45px;
+    right: -45px;
+    font-size: 18px;
+    visibility: hidden;
+    -o-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    -webkit-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    -moz-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+}
+
+.icon-big:hover .label-big-text {
+    bottom: 160px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* positons */
+
+.text-center {
+    -webkit-box-shadow: 0 3px 20px rgba(158, 137, 137, 0.377);
+    -moz-box-shadow: 0 3px 20px rgba(158, 137, 137, 0.377);
+    box-shadow: 0 3px 20px rgba(158, 137, 137, 0.377);
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.text-center {
+    background-color: rgba(18, 18, 18, 0.842);
+    width: 550px;
+    height: 550px;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    position: absolute;
+    border-radius: 50px 15px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.text-center:hover {
+    width: 600px;
+    height: 600px;
+    /* transition: width 2s; */
+    transition: width 0.5s, height 0.5s;
+}
+
+.center {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    position: absolute;
+}
+
+.center-right {
+    right: 15%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    position: absolute;
+}
+
+.center-left {
+    right: 85%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    position: absolute;
+}
+
+.center-top {
+    right: 50%;
+    bottom: 85%;
+    transform: translate(50%, 50%);
+    position: absolute;
+}
+
+.center-bottom {
+    right: 50%;
+    bottom: 15%;
+    transform: translate(50%, 50%);
+    position: absolute;
+}
