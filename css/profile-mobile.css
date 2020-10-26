@@ -43,6 +43,31 @@ a:hover{
     background-color: #393e46;
 }
 
+.nav-bar {
+    overflow: hidden;
+    font-family: 'Lobster', cursive;
+    background-color: #393e46;
+    height: 50px;
+}
+
+.nav-bar-link {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 
 /* label icon */
 
@@ -50,6 +75,26 @@ a:hover{
     font-family: 'Furious Coder';
     font-size: 3.6rem;
     transition: font-size 0.5s;
+}
+
+.icon .label-text {
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    -o-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    -webkit-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    -moz-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+}
+
+.icon:hover .label-text {
+    bottom: 85px;
+    visibility: visible;
+    opacity: 1;
 }
 
 .icon-big,.icon-big:link,.icon-big:visited{
@@ -68,6 +113,26 @@ a:hover{
 .icon-big:active{
     color: blanchedalmond;
     font-size: 7.8rem;
+}
+
+/* pop-up text arrow */
+.icon-big .label-big-text {
+    position: absolute;
+    bottom: 50px;
+    left: -45px;
+    right: -45px;
+    font-size: 14px;
+    visibility: hidden;
+    -o-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    -webkit-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    -moz-transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+    transition: all .4s cubic-bezier(0,1.03,.25,1.11);
+}
+
+.icon-big:hover .label-big-text {
+    bottom: 120px;
+    visibility: visible;
+    opacity: 1;
 }
 
 /* positons */
@@ -123,7 +188,7 @@ a:hover{
 }
 .center-top {
     right: 50%;
-    bottom: 85%;
+    bottom: 82%;
     transform: translate(50%,50%);
     position: absolute;
 }
