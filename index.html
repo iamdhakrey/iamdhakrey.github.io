@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <title>Hrithik Dhakrey</title>
 
-    <link rel="stylesheet" type="text/css" media="screen  and (min-width: 361px) and (max-width: 480px)" href="css/profile-mobile.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen  and (min-width: 361px) and (max-width: 480px)" href="css/profile-mobile.css"> -->
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)"  href="css/profile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
@@ -14,10 +14,15 @@
 
 <body class="back">
     <nav class="nav-bar">
-        <a href="#" class="nav-bar-link">Home</a>
+        <a  target="_blank" href="https://iamdhakrey.github.io" class="nav-bar-link">Home</a>
         <a href="#" class="nav-bar-link">Zizhu</a>
-        <a href="#" class="nav-bar-link">Android Rom</a>
+        <a target="_blank" href="https://sourceforge.net/projects/dhakrey/files/" class="nav-bar-link">Android Rom</a>
         <a href="#" class="nav-bar-link">About</a>
+
+        <label id="switch" class="switch nav-right">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <div class="text-center">
         <a href="#" class="center">
@@ -32,10 +37,11 @@
         <a target="_blank" href="https://instagram.com/iamdhakrey" class="center-top">
             <center><b class="icon">&#xf16d;<span class="label-text">Instagram</span></b><br><br><b class="label"></b></center>
         </a>
-        <a target="_blank" href="https://linkedin.com/in/hrithik-dhakrey" class="center-left">
+        <a target="_blank" href="https://linkedin.com/in/iamdhakrey" class="center-left">
             <center><b class="icon">&#xf08c;<span class="label-text">LinkedIn</span></b><br><br><b class="label"></b></center>
         </a>
     </div>
-</body>
+<script src="js/dark.js"></script>
 
+</body>
 </html>
