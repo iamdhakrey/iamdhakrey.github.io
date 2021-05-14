@@ -37,7 +37,7 @@ a{
 }
 a:hover{
     color: #eb84fc;
-    font-size: 1.2rem;
+    font-size: 11px;
     transition: font-size 0.5s;
 }
 
@@ -61,21 +61,17 @@ a:hover{
     overflow: hidden;
     font-family: 'Lobster', cursive;
     background-color: #393e46;
-    height: 50px;
+    height: 45px;
 }
 
-.nav-right{
-    float: right;
-    top: 25%;
-    right: 5%;
-}
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
     top: 25%;
     width: 40px;
-    height: 20px;
+    height: 10px;
   }
   
   /* Hide default HTML checkbox */
@@ -89,10 +85,10 @@ a:hover{
   .slider {
     position: absolute;
     cursor: pointer;
-    top: 0;
+    top: 5px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -7px;
     background-color: #ccc;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -135,7 +131,7 @@ a:hover{
   
   /* Rounded sliders */
   .slider.round {
-    border-radius: 34px;
+    border-radius: 24px;
   }
   
   .slider.round:before {
@@ -143,7 +139,11 @@ a:hover{
   }
   
 
-
+.nav-right{
+    float: right;
+    top: 25%;
+    right: 5%;
+}
 
 
 
@@ -151,9 +151,9 @@ a:hover{
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 11px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .topnav a:hover {
@@ -170,7 +170,7 @@ a:hover{
 
 .icon {
     font-family: 'Furious Coder';
-    font-size: 3.6rem;
+    font-size: 3rem;
     transition: font-size 0.5s;
 }
 
@@ -209,7 +209,7 @@ a:hover{
 }
 .icon-big:active{
     color: blanchedalmond;
-    font-size: 7.8rem;
+    font-size: 7rem;
 }
 
 /* pop-up text arrow */
@@ -247,8 +247,8 @@ a:hover{
 
 .text-center{
     background-color: rgba(18, 18, 18, 0.842);
-    width: 315px;
-    height: 315px;
+    width: calc(80% - 2px);
+    height: calc(50% - 2px);
     right: 50%;
     bottom: 50%;
     transform: translate(50%,50%);
@@ -258,8 +258,8 @@ a:hover{
 }
 
 .text-center:hover{
-    width:350px;
-    height: 350px;
+    width: 90%;
+    height: 60%;
     /* transition: width 2s; */
     transition: width 0.5s,height 0.5s;
 }
