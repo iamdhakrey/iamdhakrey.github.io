@@ -9,14 +9,14 @@
     <link rel="stylesheet" type="text/css" media="screen  and (min-width: 361px) and (max-width: 480px)" href="css/profile-mobile.css">
     <link rel="stylesheet" type="text/css" media="screen  and (max-width: 361px)" href="css/profile-se.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)"  href="css/profile.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     
 </head>
 
 <body class="back">
     <nav class="nav-bar">
-        <a  target="_blank" href="https://iamdhakrey.github.io" class="nav-bar-link">Home</a>
-        <a href="#" class="nav-bar-link">Zizhu</a>
+        <a href="#" class="nav-bar-link">Home</a>
+        <a href="https://github.com/iamdhakrey/Sakura_web" class="nav-bar-link">Sakura</a>
         <a target="_blank" href="https://sourceforge.net/projects/dhakrey/files/" class="nav-bar-link">Android Rom</a>
         <a href="#" class="nav-bar-link">About</a>
 
@@ -26,23 +26,85 @@
         </label>
     </nav>
     <div class="text-center">
-        <a href="#" class="center">
+        <!-- <h1 href="#" id="left-arrow"  class="left-arrow">&#8592;
+        </h1> -->
+        <p><i id="left-arrow" class="arrow left left-top"></i></p>
+
+
+        <a href="#"  id="name" class="center">
             <center><b class="icon-big">&#xf508;<span class="label-big-text">Hrithik Dhakrey</span></b><br><br><b></b></center>
         </a>
-        <a target="_blank" href="https://github.com/iamdhakrey" class="center-right">
+        <a target="_blank" id="git" href="https://github.com/iamdhakrey" class="center-right">
             <center><b class="icon">&#xf09b;<span class="label-text">GitHub</span></b><br><br><b claouter-centerss="label"></b></center>
         </a>
-        <a target="_blank" href="https://t.me/iamdhakrey" class="center-bottom">
+        <a target="_blank" id="tele" href="https://t.me/iamdhakrey"  class="center-bottom">
             <center><b class="icon">&#xf2c6;<span class="label-text">Telegram</span></b><br><br><b class="label"></b></center>
         </a>
-        <a target="_blank" href="https://instagram.com/iamdhakrey" class="center-top">
+        <a target="_blank" id="insta" href="https://instagram.com/iamdhakrey" class="center-top">
             <center><b class="icon">&#xf16d;<span class="label-text">Instagram</span></b><br><br><b class="label"></b></center>
         </a>
-        <a target="_blank" href="https://linkedin.com/in/iamdhakrey" class="center-left">
+        <a target="_blank" id="link" href="https://linkedin.com/in/iamdhakrey" class="center-left">
             <center><b class="icon">&#xf08c;<span class="label-text">LinkedIn</span></b><br><br><b class="label"></b></center>
         </a>
+        <p id="details" class="content" > Hey there! <br> I am Hrithik Dhakrey, a Python Web Developer from india. I am currently working on a project called
+            <a href="https://github.com/iamdhakrey/Sakura_web" target="_blank"> Sakura</a>
+            , a Discord Server Management Bot. I am also worked on a project called
+            <a href="https://sourceforge.net/projects/dhakrey/files/" target="_blank"> Android Rom</a>
+            , a OS for android mobile phones Redmi Y2. currently I am working as a Python developer at
+            Netweb Technologies Pvt. Ltd. since March 2020.
+            I am a self taught programmer and i am currently learning web development.
+            I have completed my B.tech in Computer Science (computer network and Cyber Security) from 
+            <a href="https://galgotiasuniversity.edu.in">  Galgotias University</a> in 2020.
+            
+        </p>
     </div>
 <script src="js/dark.js"></script>
 
+<!-- Show details of the user when clicked on name id -->
+<script>
+    $(document).ready(function(){
+        $("#name").click(function(){
+            $("#git").toggle();
+            $("#tele").toggle();
+            $("#insta").toggle();
+            $("#link").toggle();
+            // show the details of user in text center
+            $("#details").toggle();
+        });
+    });
+</script>
+<!-- hide the arrow on load -->
+<script>
+$(document).ready(function(){
+    $("#left-arrow").hide();
+    $("#details").hide();
+});
+</script>
+
+<script type="text/javascript">
+    $("#name").on('click',function(){
+        $("#left-arrow").show();
+        $("#name").hide(1000);
+        $("#tele").hide(1000);
+        $("#git").hide(1000);
+        $("#link").hide(1000);
+        $("#insta").hide(1000);
+    })
+</script>
+
+<!-- hide the arrow on click -->
+<script>
+$(document).ready(function(){
+    $("#left-arrow").on('click',function(){
+        $("#left-arrow").hide();
+        $("#details").hide(1000);
+        $("#name").show(1000);
+        $("#tele").show(1000);
+        $("#git").show(1000);
+        $("#link").show(1000);
+        $("#insta").show(1000);
+    })
+})
+</script>
 </body>
 </html>

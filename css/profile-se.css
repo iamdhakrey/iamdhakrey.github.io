@@ -263,6 +263,13 @@ a:hover{
     /* transition: width 2s; */
     transition: width 0.5s,height 0.5s;
 }
+
+.left-arrow{
+    left: 0%;
+    top: 0%;
+    transform: translate(50%,0%);
+    position: absolute;
+}
 .center{
     right: 50%;
     bottom: 50%;

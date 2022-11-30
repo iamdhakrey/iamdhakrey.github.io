@@ -266,6 +266,36 @@ a:hover {
     position: absolute;
 }
 
+.arrow {
+    border: solid rgb(166, 134, 197);
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 7px;
+  }
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: relative;
+}
+
+.left-top {
+    left: 5%;
+    top: 5%;
+    /* bold */
+    font-weight: bold;
+    transform: translate(50%, 50%) rotate(135deg); 
+    position: absolute;
+}
+  
+.left-arrow {
+    border: solid #b867c9;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+
 .center-right {
     right: 15%;
     bottom: 50%;
@@ -292,4 +322,15 @@ a:hover {
     bottom: 15%;
     transform: translate(50%, 50%);
     position: absolute;
+}
+
+.content {
+    /* set font */
+    font-family: 'Furious Coder';
+    font-size: 1.4rem;
+    color: #f04f7c;
+    text-align: center;
+    padding: 4%;
+    margin: 0;
+    border-radius: 15px;
 }
