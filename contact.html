@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <!-- Regular data -->
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- Description -->
+    <meta name="author" content="Hrithik Dhakrey" />
+    <meta name="description" content="I create frontend & backend python application" />
+    <meta name="keywords" content="hrithik,dhakreu,hrithik dhakrey,iamdhakey,python,full stack,freelance" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph data -->
+    <meta property="og:site_name" content="Hrithik Dhakrey" />
+    <meta property="og:title" content="Hrithik Dhakrey" />
+    <meta property="og:description" content="I create frontend & backend python application" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iamdhakrey.dev" />
+
+    <!-- Title -->
+    <title>Hrithik Dhakrey</title>
+
+
+    <!-- Icons -->
+    <!-- <link href="https://iamdhakrey.dev/img/thumbnail.png" type="image/png" rel="image_src"> -->
+    <link href="https://iamdhakrey.dev" rel="canonical">
+
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Toggle button mobile -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".mobile-tap-area").click(function () {
+                $(".toggle-mobile-first").toggle();
+                $(".toggle-mobile-second").toggle();
+            });
+        });
+    </script>
+
+</head>
+
+
+<body class="website-background-black">
+
+
+    <div class="max-width">
+        <div class="logo">
+            <div class="logo-inner">
+                <a href="../">
+                    <div class="label-logo on-hover--40 text-color-white"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="top-bottom-margin">
+            <div class="hide-text-block">
+                <h2 class="text-color-white animate">Let's make something great!</h2>
+            </div>
+
+            <div class="max-width-70 text-color-white animate delay02">
+                <h4>Contact</h4>
+                <p>
+                    I'm seeking out opportunities to collaborate with companies / agencies / individuals, not just work
+                    for them. I want to bring my collective experience to the table where we can work together to solve
+                    real business-problems in a way that optimizes all of our respective experience and knowledge.
+                </p>
+                <p>
+                    I want to avoid subjective pissing-matches, and favor open-minded collaborators where egos are out
+                    of the equation.
+                    If that all sounds about right, then lets for sure chat about how we can work together.
+                </p>
+                <p>
+                    Feel free to reach out through any platforms bellow:
+                </p>
+
+                <div class="links">
+                    <a class="on-hover-40 text-color-red label-email copy-email"></a>
+                    <a class="on-hover-40 text-color-red" href="https://instagram.com/iamdhakrey/"
+                        target="_blank">Instagram</a>
+                    <a class="on-hover-40 text-color-red" href="https://twitter.com/iamdhakrey"
+                        target="_blank">Twitter</a>
+                    <a class="on-hover-40 text-color-red" href="https://www.linkedin.com/in/iamdhakrey"
+                        target="_blank">Linkedin</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <! end max-width ->
+
+
+        <!-- Yall lazy load -->
+        <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+        <script src="../js/yall.min.js"></script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", yall);
+        </script>
+
+
+        <!-- Copy to clipboard -->
+        <script src="../js/clipboard.min.js"></script>
+        <script>
+            var clipboard = new ClipboardJS('.copy-email', {
+                text: function () {
+                    return 'dhakreyhrithik@gmail.com';
+                }
+            });
+            clipboard.on('success', function (e) {
+                console.log(e);
+            });
+            clipboard.on('error', function (e) {
+                console.log(e);
+            });
+        </script>
+
+
+</body>
+
+</html>

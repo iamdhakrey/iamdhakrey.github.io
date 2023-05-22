@@ -1,110 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
+
+    <!-- Regular data -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- Description -->
+    <meta name="author" content="Hrithik Dhakrey" />
+    <meta name="description" content="I create frontend & backend python application" />
+    <meta name="keywords" content="hrithik,dhakreu,hrithik dhakrey,iamdhakey,python,full stack,freelance" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph data -->
+    <meta property="og:site_name" content="Hrithik Dhakrey" />
+    <meta property="og:title" content="Hrithik Dhakrey" />
+    <meta property="og:description" content="I create frontend & backend python application" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iamdhakrey.dev" />
+
+    <!-- Title -->
     <title>Hrithik Dhakrey</title>
 
-    <link rel="stylesheet" type="text/css" media="screen  and (min-width: 361px) and (max-width: 480px)" href="css/profile-mobile.css">
-    <link rel="stylesheet" type="text/css" media="screen  and (max-width: 361px)" href="css/profile-se.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)"  href="css/profile.css">
-    <script src="js/jquery.min.js"></script>
-    
+
+    <!-- Icons -->
+    <!-- <link href="https://iamdhakrey.dev/img/thumbnail.png" type="image/png" rel="image_src"> -->
+    <link href="https://iamdhakrey.dev" rel="canonical">
+
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Toggle button mobile -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".mobile-tap-area").click(function () {
+                $(".toggle-mobile-first").toggle();
+                $(".toggle-mobile-second").toggle();
+            });
+        });
+    </script>
+
 </head>
 
-<body class="back">
-    <nav class="nav-bar">
-        <a href="#" class="nav-bar-link">Home</a>
-        <a href="https://github.com/iamdhakrey/Sakura_web" class="nav-bar-link">Sakura</a>
-        <a target="_blank" href="https://sourceforge.net/projects/dhakrey/files/" class="nav-bar-link">Android Rom</a>
-        <a href="#" class="nav-bar-link">About</a>
+<body class="website-background-black">
 
-        <label id="switch" class="switch nav-right">
-            <input type="checkbox" onchange="toggleTheme()" id="slider">
-            <span class="slider round"></span>
-        </label>
-    </nav>
-    <div class="text-center">
-        <!-- <h1 href="#" id="left-arrow"  class="left-arrow">&#8592;
-        </h1> -->
-        <p><i id="left-arrow" class="arrow left left-top"></i></p>
-
-
-        <a href="#"  id="name" class="center">
-            <center><b class="icon-big">&#xf508;<span class="label-big-text">Hrithik Dhakrey</span></b><br><br><b></b></center>
-        </a>
-        <a target="_blank" id="git" href="https://github.com/iamdhakrey" class="center-right">
-            <center><b class="icon">&#xf09b;<span class="label-text">GitHub</span></b><br><br><b claouter-centerss="label"></b></center>
-        </a>
-        <a target="_blank" id="tele" href="https://t.me/iamdhakrey"  class="center-bottom">
-            <center><b class="icon">&#xf2c6;<span class="label-text">Telegram</span></b><br><br><b class="label"></b></center>
-        </a>
-        <a target="_blank" id="insta" href="https://instagram.com/iamdhakrey" class="center-top">
-            <center><b class="icon">&#xf16d;<span class="label-text">Instagram</span></b><br><br><b class="label"></b></center>
-        </a>
-        <a target="_blank" id="link" href="https://linkedin.com/in/iamdhakrey" class="center-left">
-            <center><b class="icon">&#xf08c;<span class="label-text">LinkedIn</span></b><br><br><b class="label"></b></center>
-        </a>
-        <p id="details" class="content" > Hey there! <br> I am Hrithik Dhakrey, a Python Web Developer from india. I am currently working on a project called
-            <a href="https://github.com/iamdhakrey/Sakura_web" target="_blank"> Sakura</a>
-            , a Discord Server Management Bot. I am also worked on a project called
-            <a href="https://sourceforge.net/projects/dhakrey/files/" target="_blank"> Android Rom</a>
-            , a OS for android mobile phones Redmi Y2. currently I am working as a Python developer at
-            Netweb Technologies Pvt. Ltd. since March 2020.
-            I am a self taught programmer and i am currently learning web development.
-            I have completed my B.tech in Computer Science (computer network and Cyber Security) from 
-            <a href="https://galgotiasuniversity.edu.in">  Galgotias University</a> in 2020.
-            
-        </p>
+    <div class="hide-mobile mobile-tap-area">
+        <div class="max-width">
+            <div class="vertical-center">
+                <h1>
+                    <div class="text-color-white hide-text-block">
+                        <div class="animate toggle-mobile-first">Hello.</div>
+                    </div>
+                    <div class="text-color-red hide-text-block">
+                        <div class="animate delay04 toggle-mobile-first">I am</div>
+                    </div>
+                    <div class="text-color-red hide-text-block">
+                        <div class="animate delay08 toggle-mobile-first">Hrithik</div>
+                    </div>
+                </h1>
+            </div>
+        </div>
+        <div class="tap-indication">Tap anywhere</div>
     </div>
-<script src="js/dark.js"></script>
 
-<!-- Show details of the user when clicked on name id -->
-<script>
-    $(document).ready(function(){
-        $("#name").click(function(){
-            $("#git").toggle();
-            $("#tele").toggle();
-            $("#insta").toggle();
-            $("#link").toggle();
-            // show the details of user in text center
-            $("#details").toggle();
-        });
-    });
-</script>
-<!-- hide the arrow on load -->
-<script>
-$(document).ready(function(){
-    $("#left-arrow").hide();
-    $("#details").hide();
-});
-</script>
+    <div class="max-width">
+        <div class="vertical-center">
+            <h1>
+                <div class="hide-text-block">
+                    <a href="about.html">
+                        <div class="animate text-color-white on-hover-40 hide-web label-hello "></div>
+                        <div class="animate text-color-white on-hover-40 hide-mobile toggle-mobile-second">About</div>
+                    </a>
+                </div>
+                <div class="hide-text-block">
+                    <a href="work.html">
+                        <div class="animate text-color-red on-hover-40 delay04 hide-web label-iam"></div>
+                        <div class="animate text-color-red on-hover-40 delay04 hide-mobile toggle-mobile-second">Work
+                        </div>
+                    </a>
+                </div>
+                <div class="hide-text-block">
+                    <a href="contact.html">
+                        <div class="animate text-color-red on-hover-40 delay08 hide-web label-hrithik"></div>
+                        <div class="animate text-color-red on-hover-40 delay08 hide-mobile toggle-mobile-second">Contact
+                        </div>
+                    </a>
+                </div>
+            </h1>
+        </div>
+    </div>
+    <div class="bg-photo"></div>
 
-<script type="text/javascript">
-    $("#name").on('click',function(){
-        $("#left-arrow").show();
-        $("#name").hide(1000);
-        $("#tele").hide(1000);
-        $("#git").hide(1000);
-        $("#link").hide(1000);
-        $("#insta").hide(1000);
-    })
-</script>
-
-<!-- hide the arrow on click -->
-<script>
-$(document).ready(function(){
-    $("#left-arrow").on('click',function(){
-        $("#left-arrow").hide();
-        $("#details").hide(1000);
-        $("#name").show(1000);
-        $("#tele").show(1000);
-        $("#git").show(1000);
-        $("#link").show(1000);
-        $("#insta").show(1000);
-    })
-})
-</script>
 </body>
+
 </html>
